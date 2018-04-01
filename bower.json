@@ -1,0 +1,14 @@
+{
+  "name": "chesshack",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Rolf Bansbach <rolfbans@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rolfisub/chesshack",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
