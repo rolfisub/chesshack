@@ -337,6 +337,18 @@ autoprefixer@^6.3.1:
     postcss "^5.2.16"
     postcss-value-parser "^3.2.3"
 
+awesome-typescript-loader@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/awesome-typescript-loader/-/awesome-typescript-loader-4.0.1.tgz#bddae8183f06eb65184390d596e4342ca2089281"
+  dependencies:
+    chalk "^2.3.1"
+    enhanced-resolve "3.3.0"
+    loader-utils "^1.1.0"
+    lodash "^4.17.4"
+    micromatch "^3.0.3"
+    mkdirp "^0.5.1"
+    source-map-support "^0.5.3"
+
 aws-sign2@~0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
@@ -1362,7 +1374,7 @@ chalk@1.1.3, chalk@^1.1.3:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.2:
+chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.1, chalk@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.3.2.tgz#250dc96b07491bfd601e648d66ddf5f60c7a5c65"
   dependencies:
@@ -2178,6 +2190,15 @@ encoding@^0.1.11:
   dependencies:
     iconv-lite "~0.4.13"
 
+enhanced-resolve@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-3.3.0.tgz#950964ecc7f0332a42321b673b38dc8ff15535b3"
+  dependencies:
+    graceful-fs "^4.1.2"
+    memory-fs "^0.4.0"
+    object-assign "^4.0.1"
+    tapable "^0.2.5"
+
 enhanced-resolve@^3.4.0:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-3.4.1.tgz#0421e339fd71419b3da13d129b3979040230476e"
@@ -2870,7 +2891,7 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
-fsevents@^1.0.0, fsevents@^1.1.2, fsevents@^1.1.3:
+fsevents@^1.0.0, fsevents@^1.1.2:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-1.1.3.tgz#11f82318f5fe7bb2cd22965a108e9306208216d8"
   dependencies:
@@ -4454,7 +4475,7 @@ micromatch@^2.1.5, micromatch@^2.3.11:
     parse-glob "^3.0.4"
     regex-cache "^0.4.2"
 
-micromatch@^3.1.4, micromatch@^3.1.8:
+micromatch@^3.0.3, micromatch@^3.1.4, micromatch@^3.1.8:
   version "3.1.10"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-3.1.10.tgz#70859bc95c9840952f359a068a3fc49f9ecfac23"
   dependencies:
@@ -5613,50 +5634,6 @@ react-resize-aware@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/react-resize-aware/-/react-resize-aware-2.7.0.tgz#1bb6d0b45a234d94d412b5c3f5e9d2ffbf973429"
 
-react-scripts@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-1.1.1.tgz#279d449f7311fed910506987a1ade014027788a8"
-  dependencies:
-    autoprefixer "7.1.6"
-    babel-core "6.26.0"
-    babel-eslint "7.2.3"
-    babel-jest "20.0.3"
-    babel-loader "7.1.2"
-    babel-preset-react-app "^3.1.1"
-    babel-runtime "6.26.0"
-    case-sensitive-paths-webpack-plugin "2.1.1"
-    chalk "1.1.3"
-    css-loader "0.28.7"
-    dotenv "4.0.0"
-    dotenv-expand "4.2.0"
-    eslint "4.10.0"
-    eslint-config-react-app "^2.1.0"
-    eslint-loader "1.9.0"
-    eslint-plugin-flowtype "2.39.1"
-    eslint-plugin-import "2.8.0"
-    eslint-plugin-jsx-a11y "5.1.1"
-    eslint-plugin-react "7.4.0"
-    extract-text-webpack-plugin "3.0.2"
-    file-loader "1.1.5"
-    fs-extra "3.0.1"
-    html-webpack-plugin "2.29.0"
-    jest "20.0.4"
-    object-assign "4.1.1"
-    postcss-flexbugs-fixes "3.2.0"
-    postcss-loader "2.0.8"
-    promise "8.0.1"
-    raf "3.4.0"
-    react-dev-utils "^5.0.0"
-    style-loader "0.19.0"
-    sw-precache-webpack-plugin "0.11.4"
-    url-loader "0.6.2"
-    webpack "3.8.1"
-    webpack-dev-server "2.9.4"
-    webpack-manifest-plugin "1.3.2"
-    whatwg-fetch "2.0.3"
-  optionalDependencies:
-    fsevents "^1.1.3"
-
 react@^16.3.0:
   version "16.3.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.3.0.tgz#fc5a01c68f91e9b38e92cf83f7b795ebdca8ddff"
@@ -6271,6 +6248,12 @@ source-map-support@^0.4.15:
   dependencies:
     source-map "^0.5.6"
 
+source-map-support@^0.5.3:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.4.tgz#54456efa89caa9270af7cd624cc2f123e51fbae8"
+  dependencies:
+    source-map "^0.6.0"
+
 source-map-url@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/source-map-url/-/source-map-url-0.4.0.tgz#3e935d7ddd73631b97659956d55128e87b5084a3"
@@ -6285,7 +6268,7 @@ source-map@^0.4.4:
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@^0.6.1, source-map@~0.6.1:
+source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
 
@@ -6557,7 +6540,7 @@ table@^4.0.1:
     slice-ansi "1.0.0"
     string-width "^2.1.1"
 
-tapable@^0.2.7:
+tapable@^0.2.5, tapable@^0.2.7:
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-0.2.8.tgz#99372a5c999bf2df160afc0d74bed4f47948cd22"
 

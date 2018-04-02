@@ -92,5 +92,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^4.0.1"
   }
 }

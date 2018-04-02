@@ -1,23 +1,44 @@
 import React from 'react';
 import Chessboard from 'react-chess';
-import ctb from '../../common/chessToBoardReact';
+import {chessToBoardReact} from '../../common/chessToBoardReact';
 
 export class Game extends React.Component {
     constructor(props) {
         super(props);
-        this.ctb = new ctb();
+        this.state = {
+            lineup: []
+        };
+        this.ctb = new chessToBoardReact();
+        this.makeRandomMove = this.makeRandomMove.bind(this);
+    }
+
+    makeRandomMove() {
+        let posMoves = this.props.chess.moves();
+        let rndIndex = Math.floor(Math.random() * posMoves.length);
+        this.props.chess.move(posMoves[rndIndex]);
+        let fen = this.props.chess.fen();
+        this.setState({
+            lineup: this.ctb.fromFenToLineup(fen)
+        });
     }
 
     componentDidMount() {
-        console.log(this.props.chess.fen());
-        this.ctb.fromFenToLineup('abc');
+        let fen = this.props.chess.fen();
+        this.setState({
+            lineup: this.ctb.fromFenToLineup(fen)
+        });
+        setInterval(()=> {
+            let game = this.props.chess;
+            if (game.game_over() === true ||
+                game.in_draw() === true ) game.reset();
+            this.makeRandomMove();
+        }, 1)
     }
 
     render() {
-        const lineup = ['R@h1', 'P@f2', 'q@d8', 'R@a1', 'P@a2', 'P@c2', 'b@c8', 'p@d7', 'Q@d1', 'n@g8'];
         return(
             <div style={{width:500, height:500}}>
-                <Chessboard pieces={lineup} />
+                <Chessboard pieces={this.state.lineup} />
                 Chess Hack V 0.0.0
             </div>
         );
