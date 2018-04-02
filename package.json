@@ -6,6 +6,7 @@
     "chess.js": "^0.10.2",
     "jquery": "^3.3.1",
     "react": "^16.3.0",
+    "react-chess": "^1.1.0",
     "react-dom": "^16.3.0",
     "react-scripts": "1.1.1"
   },
