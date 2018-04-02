@@ -29,8 +29,18 @@ export class Game extends React.Component {
         });
         setInterval(()=> {
             let game = this.props.chess;
+            if(game.in_check()) {
+                console.log('in check!');
+            }
+            if(game.in_checkmate()) {
+                console.log('checkmate!');
+            }
+            if(game.in_draw()) {
+                console.log('draw!');
+            }
             if (game.game_over() === true ||
                 game.in_draw() === true ) game.reset();
+
             this.makeRandomMove();
         }, 1)
     }
